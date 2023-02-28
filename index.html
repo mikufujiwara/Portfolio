@@ -5,11 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap"
       rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
     />
     <title>Document</title>
   </head>
@@ -18,23 +16,26 @@
     <header>
       <nav>
         <section>
-          <h3>Miku <span>-portfolio site</span></h3>
-          <section>
-            <ul>
-              <li><a href="#about">ABOUT</a></li>
-              <li><a href="#about">EDUCATION</a></li>
-              <li><a href="#about">WORKS</a></li>
-              <li><a href="#about">CONTACT</a></li>
-            </ul>
-          </section>
+          <h3>
+            <a href="#">Miku <span>-portfolio site</span></a>
+          </h3>
+          <ul>
+            <li><a href="#about">ABOUT</a></li>
+            <li><a href="#education">EDUCATION</a></li>
+            <li><a href="#work">WORKS</a></li>
+            <li><a href="#contact">CONTACT</a></li>
+          </ul>
+
           <details>
+            <summary class="fa-solid fa-bars"></summary>
             <ul>
               <li><a href="#about">ABOUT</a></li>
-              <li><a href="#about">EDUCATION</a></li>
-              <li><a href="#about">WORKS</a></li>
-              <li><a href="#about">CONTACT</a></li>
+              <li><a href="#education">EDUCATION</a></li>
+              <li><a href="#work">WORKS</a></li>
+              <li><a href="#contact">CONTACT</a></li>
             </ul>
           </details>
+
           <ul>
             <li>
               <a href="https://www.linkedin.com/in/miku-fujiwara/">icon</a>
@@ -44,10 +45,11 @@
           </ul>
         </section>
       </nav>
+
       <section>
         <h1>MIKU</h1>
         <h1>FUJIWARA</h1>
-        <p>Front-end Developer / Graphic Designer</p>
+        <p>Front-end Developer / Web Designer</p>
       </section>
     </header>
 
@@ -56,201 +58,235 @@
       <!-- ABOUT -->
       <section id="about">
         <h2>ABOUT</h2>
-        <article>
-          <aside>
-            <h4>Miku FUjiwara</h4>
-            <p>
-              Hello, my name is Miku. I was born and raised in Japan. I am
-              optimism and always have willingness to learn new things. I have
-              experienced multiple jobs and I found myself as a quick learner. I
-              came to Vancouver in 2022 to study programming to expand my
-              career. Now I found programming challenging but also fun!
-            </p>
-          </aside>
-          <aside>
-            <h4>SKILLS</h4>
-            <p>
-              HTML / CSS / Sass / JavaScript / React / Node.js / PHP / GitHub
-              ...
-            </p>
-            <p>
-              Adobe Illustrator / Adobe Photoshop / Figma / Canva / STUDIO...
-            </p>
-          </aside>
-          <aside>
-            <h4>HOBBIES</h4>
-            <p>Hiking / Baking / Drawing / Traveling</p>
-            <p>Vancouver is one of the best cities for hiking!</p>
-          </aside>
-        </article>
-        <article>
-          <figure>
-            <img src="./img/profile.png" alt="profile picture" />
-          </figure>
-          <aside>
-            <h4>LINKS</h4>
-            <p>
-              <a href="https://www.linkedin.com/in/miku-fujiwara/">LinkedIn</a>
-              <a href="https://www.facebook.com/miku.22">Facebook</a>
-            </p>
-            <a
-              href="https://drive.google.com/file/d/1ppMFQUqHlqXyL4GVEpzzecSKlrtpogpL/view"
-              >Download my resume here!</a
-            >
-          </aside>
-        </article>
+        <section>
+          <article>
+            <aside>
+              <h4>Miku Fujiwara</h4>
+              <p>
+                Hello, my name is Miku. I was born and raised in Japan. I am
+                optimism and always have willingness to learn new things. I have
+                experienced multiple jobs and I found myself as a quick learner.
+                I came to Vancouver in 2022 to study programming to expand my
+                career. Now I found programming challenging but also fun!
+              </p>
+            </aside>
+            <aside class="skill">
+              <h4>SKILLS</h4>
+              <p>
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>Sass</span>
+                <span>Java<br />Script</span>
+                <span>React</span>
+              </p>
+              <p>
+                <span>Vue.js</span>
+                <span>JQuery</span>
+                <span>Illust<br />lator</span>
+                <span>Photo<br />shop</span>
+                <span>Canva</span>
+              </p>
+            </aside>
+            <aside>
+              <h4>HOBBIES</h4>
+              <p>Hiking / Baking / Drawing / Traveling</p>
+              <p>Vancouver is one of the best cities for hiking!</p>
+            </aside>
+          </article>
+          <article>
+            <figure>
+              <img src="./img/profile.png" alt="profile picture" />
+            </figure>
+            <aside>
+              <h4>LINKS</h4>
+              <ul>
+                <li>
+                  <a href="https://www.linkedin.com/in/miku-fujiwara/"
+                    >LinkedIn</a
+                  >
+                </li>
+                <li>
+                  <a href="https://www.facebook.com/miku.22">Facebook</a>
+                </li>
+                <li>
+                  <a
+                    href="https://drive.google.com/file/d/1ppMFQUqHlqXyL4GVEpzzecSKlrtpogpL/view"
+                    >Download my resume here!</a
+                  >
+                </li>
+              </ul>
+            </aside>
+          </article>
+        </section>
       </section>
 
       <!-- EDUCATION -->
       <section id="education">
         <h2>EDUCATION</h2>
-        <article>
-          <aside>
-            <h3>Tamwood International College</h3>
-            <h4>- Vancouver, Canada</h4>
-          </aside>
-          <aside>
-            <h5>
-              Web Developer Course<br />
-              October 2022 - March 2023
-            </h5>
-          </aside>
-          <aside>
-            <h3>
-              <a href="https://github.com/mariacbrs/finalprojectmiku-maria"
-                >HTML & CSS project</a
-              >
-            </h3>
-            <p>
-              My classmate and I created a responsive web page using HTML, CSS
-              and Sass. Our theme was about the film industry. We created a main
-              page together and I created my page by myself which is miku.html.
-            </p>
-          </aside>
-          <aside>
-            <h3>
+        <section>
+          <article>
+            <aside>
+              <h4>Tamwood International College</h4>
+              <h5>- Vancouver, Canada</h5>
+            </aside>
+            <aside>
+              <h5>
+                Web Developer Course<br />
+                October 2022 - March 2023
+              </h5>
+            </aside>
+            <aside>
+              <a href="https://github.com/mariacbrs/finalprojectmiku-maria">
+                HTML & CSS project
+              </a>
+              <p>
+                My classmate and I created a responsive web page using HTML, CSS
+                and Sass. Our theme was about the film industry. We created a
+                main page together and I created my page by myself which is
+                miku.html.
+              </p>
+            </aside>
+            <aside>
               <a href="https://github.com/gh-tyl/wepost-api">PHP project</a>
-            </h3>
-            <p>
-              My team created an encyclopedia named WePost where you can post
-              articles from simple ideas up to a full scientific article. I
-              created the login page for this project. For the security, you
-              will need to change your password when you login for the first
-              time. From the second time which means after you change the
-              password, the password will be hashed.
-            </p>
-          </aside>
-          <aside>
-            <h3>
+              <p>
+                My team created an encyclopedia named WePost where you can post
+                articles from simple ideas up to a full scientific article. I
+                created the login page for this project. For the security, you
+                will need to change your password when you login for the first
+                time. From the second time which means after you change the
+                password, the password will be hashed.
+              </p>
+            </aside>
+            <aside>
               <a href="https://github.com/gh-tyl/wepost-client"
                 >React project</a
               >
-            </h3>
-            <p>
-              My team created a front-end side of the encyclopedia that we
-              created for PHP project by using React. I created the user's
-              profile page. We also used MUI (the React component library) for
-              design this time.
-            </p>
-          </aside>
-        </article>
-        <article>
-          <aside>
-            <h3>Kyoto Sangyo University</h3>
-            <h4>- Kyoto, Japan</h4>
-          </aside>
-          <aside>
-            <h5>
-              English Language and Literature<br />
-              April 2012 - March 2017
-            </h5>
-            <ul>
-              <li>Volunteer, Habitat for Humanity</li>
-              <li>Internship, Gerekan Mari Berbagi</li>
-              <li>Internship, Center for Entrepreneurship development</li>
-              <li>
-                1 year break for study abroad in Indonesia to learn Indonesian
-                language and the culture of Southeast Asia.
-              </li>
-            </ul>
-          </aside>
-        </article>
+              <p>
+                My team created a front-end side of the encyclopedia that we
+                created for PHP project by using React. I created the user's
+                profile page. We also used MUI (the React component library) for
+                design this time.
+              </p>
+            </aside>
+          </article>
+          <article>
+            <aside>
+              <h4>Kyoto Sangyo University</h4>
+              <h5>- Kyoto, Japan</h5>
+            </aside>
+            <aside>
+              <h5>
+                English Language and Literature<br />
+                April 2012 - March 2017
+              </h5>
+              <ul>
+                <li>Volunteer, Habitat for Humanity</li>
+                <li>Internship, Gerekan Mari Berbagi</li>
+                <li>Internship, Center for Entrepreneurship development</li>
+                <li>
+                  1 year break for study abroad in Indonesia to learn Indonesian
+                  language and the culture of Southeast Asia.
+                </li>
+              </ul>
+            </aside>
+          </article>
+        </section>
       </section>
 
       <!-- WORKS -->
       <section id="work">
         <h2>WORK</h2>
-        <article>
-          <aside>
-            <h3>Graphic designer</h3>
-            <h4>WAFULL K.K.</h4>
-            <h4>Real estate company | Tokyo, Japan | May 2020 - Aug 2022</h4>
-            <p>
-              I usually developed creative design for print materials,
-              brochures, and banners to help clients sell their property. I
-              defined buyer personas to develop the design by considering
-              property's price, layouts, land, neighborhood, client's opinions,
-              and so on and studying information about real estate in that area.
-              I mainly used Adobe Illustrator and Adobe Photoshop.
-            </p>
-            <section>
+        <section>
+          <article>
+            <aside>
+              <h4><i class="fa-solid fa-pen-clip"></i> Graphic designer</h4>
+              <h5>WAFULL K.K.</h5>
+              <span
+                >Real estate company | Tokyo, Japan | May 2020 - Aug 2022</span
+              >
+              <p>
+                I usually developed creative design for print materials,
+                brochures, and banners to help clients sell their property. I
+                defined buyer personas to develop the design by considering
+                property's price, layouts, land, neighborhood, client's
+                opinions, and so on and studying information about real estate
+                in that area. I mainly used Adobe Illustrator and Adobe
+                Photoshop.
+              </p>
+              <section>
                 <figure>
-                    <figcaption>Typical Japanese real estate brochure</figcaption>
-                    <img src="" alt="Typical Japanese real estate brochure" />
+                  <figcaption>Typical Japanese real estate brochure</figcaption>
+                  <img
+                    src="./img/sample.jpg"
+                    alt="Typical Japanese real estate brochure"
+                  />
                 </figure>
-                <figure>
-                    <figcaption>My real estate brochure</h4></figcaption>
-                    <img src="./img/realestate_print_1.jpg" alt="work1">
-                    <img src="./img/realestate_print_2.jpg" alt="work2">
-                    <img src="./img/realestate_print_3.jpg" alt="work3">
-                    <img src="./img/realestate_print_4.jpg" alt="work4">
-                    <img src="./img/realestate_print_5.jpg" alt="work5">
-                    <img src="./img/realestate_print_6.jpg" alt="work6">
-                </figure>
-            </section>
-          </aside>
+                <article slide-container>
+                  <figure>
+                    <figcaption>My real estate brochure</figcaption>
+                    <div class="slide-show">
+                      <img src="./img/realestate_print_1.jpg" alt="work1" />
+                      <img src="./img/realestate_print_2.jpg" alt="work2" />
+                      <img src="./img/realestate_print_3.jpg" alt="work3" />
+                      <img src="./img/realestate_print_4.jpg" alt="work4" />
+                      <img src="./img/realestate_print_5.jpg" alt="work5" />
+                      <img src="./img/realestate_print_6.jpg" alt="work6" />
+                    </div>
+                  </figure>
+                </article>
+              </section>
+            </aside>
 
-          <aside>
-            <h3>Travel agent</h3>
-            <h4>H.I.S. International Tours Inc.</h4>
-            <h4>Travel agency | New York, USA | Jan 2019 - Mar 2020</h4>
-            <p>
-              I answered incoming phone calls and developed friendly rapport
-              with callers while answering questions, making recommended flight
-              options and leading conversations to bookings using either English
-              or Japanese depending on the customer. I also maintained both
-              international and domestic travel accommodations for customers,
-              arranging for airfare as well as hotel and rental car reservations
-              using a computer reservations system called Apollo GDS.
-            </p>
-          </aside>
+            <aside>
+              <h4><i class="fa-solid fa-plane"></i> Travel agent</h4>
+              <h5>H.I.S. International Tours Inc.</h5>
+              <span>Travel agency | New York, USA | Jan 2019 - Mar 2020</span>
+              <p>
+                I answered incoming phone calls and developed friendly rapport
+                with callers while answering questions, making recommended
+                flight options and leading conversations to bookings using
+                either English or Japanese depending on the customer. I also
+                maintained both international and domestic travel accommodations
+                for customers, arranging for airfare as well as hotel and rental
+                car reservations using a computer reservations system called
+                Apollo GDS.
+              </p>
+            </aside>
 
-          <aside>
-            <h3>Administrative assistant</h3>
-            <h4>Xacti Corporation</h4>
-            <h4>
-              Digital camera manufacturer | Osaka, Japan | Apr 2017 - Dec 2018
-            </h4>
-            <p>
-              They had a factory in Indonesia and had many Indonesian employees
-              who didn't speak Japanese. Since I can speak Indonesian, I usually
-              translated manuals into English and Indonesian from Japanese so
-              that Indonesian employees who work in a factory could assemble
-              cameras reading the manuals. I also calculated the required man
-              hour for the next project.
-            </p>
-          </aside>
-        </article>
+            <aside>
+              <h4>
+                <i class="fa-solid fa-desktop"></i> Administrative assistant
+              </h4>
+              <h5>Xacti Corporation</h5>
+              <span>
+                Digital camera manufacturer | Osaka, Japan | Apr 2017 - Dec 2018
+              </span>
+              <p>
+                They had a factory in Indonesia and had many Indonesian
+                employees who didn't speak Japanese. Since I can speak
+                Indonesian, I usually translated manuals into English and
+                Indonesian from Japanese so that Indonesian employees who work
+                in a factory could assemble cameras reading the manuals. I also
+                calculated the required man hour for the next project.
+              </p>
+            </aside>
+          </article>
+        </section>
       </section>
 
-      <section>
-        <h3>GET IN TOUCH</h3>
-        <p>Please feel free to contact me</p>
-        <a href="emailto:llt9.oct22@gmail.com">llt9.oct22@gmail.com</a>
+      <section id="contact">
+        <h2>GET IN TOUCH</h2>
+        <aside>
+          <p>Please feel free to contact me!</p>
+          <a href="emailto:llt9.oct22@gmail.com"
+            ><i class="fa-solid fa-envelope"></i> llt9.oct22@gmail.com</a
+          >
+        </aside>
       </section>
     </main>
   </body>
+
   <footer>
-    <p>&copy; Miku Fujiwara</p>
+    <p>2023 &copy; Miku Fujiwara</p>
   </footer>
 </html>
