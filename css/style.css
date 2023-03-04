@@ -8,9 +8,9 @@
 }
 
 main {
-  background: linear-gradient(to right, #100c09, #856C7E);
-  background: -moz-linear-gradient(left, #100c09, #856C7E);
-  background: -webkit-linear-gradient(left, #100c09, #856C7E);
+  background: linear-gradient(to right, #100c09, #856c7e);
+  background: -moz-linear-gradient(left, #100c09, #856c7e);
+  background: -webkit-linear-gradient(left, #100c09, #856c7e);
 }
 
 img {
@@ -21,6 +21,10 @@ img {
 a {
   text-decoration: none;
   cursor: pointer;
+}
+
+a > span {
+  letter-spacing: 1.5px;
 }
 
 p,
@@ -40,10 +44,7 @@ footer {
   padding: 3%;
 }
 
-footer p {
-  font-size: 10px;
-}
-
+/* ---------- MOBILE VERSION ---------- */
 @media (min-width: 200px) {
   header,
   main {
@@ -67,12 +68,9 @@ footer p {
 
   h2 {
     font-size: 25px;
-      text-shadow: 0 0 10px #b89cc2,
-      0 0 20px #b89cc2,
-      0 0 30px #b89cc2,
-      0 0 40px #b89cc2,
-      0 0 50px #b89cc2;
-      color: #ffffff;
+    text-shadow: 0 0 10px #b89cc2, 0 0 20px #b89cc2, 0 0 30px #b89cc2,
+      0 0 40px #b89cc2, 0 0 50px #b89cc2;
+    color: #ffffff;
   }
 
   h3 {
@@ -110,6 +108,7 @@ footer p {
     padding: 20px 0;
     width: 100vw;
     position: fixed;
+    z-index: 1;
   }
 
   nav h3 {
@@ -127,12 +126,12 @@ footer p {
   nav > section {
     display: flex;
     flex-direction: row;
-    width: 90%;
     padding: 0 5%;
   }
 
   section > ul {
     display: none;
+    list-style-type: none;
   }
 
   details {
@@ -176,7 +175,7 @@ footer p {
   /* MAIN */
 
   main {
-    padding: 40px 30px;
+    padding: 5%;
     display: flex;
     flex-direction: column;
     row-gap: 40px;
@@ -232,12 +231,18 @@ footer p {
     text-decoration: underline;
   }
 
-  #about .skill > p {
+  .skill > div {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+  }
+
+  .skill > div > p {
     display: flex;
     justify-content: space-around;
   }
 
-  #about p>span {
+  #about p > span {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -251,8 +256,6 @@ footer p {
     color: #fff;
     line-height: 1;
   }
-
-
 
   /* EDUCATION */
 
@@ -272,63 +275,261 @@ footer p {
   #work figcaption {
     font-size: 16px;
     font-weight: 600;
+    margin-top: 10px;
   }
 
-  .slide-show{
-    position: relative; 
-    overflow: hidden; 
+  .slide-show {
+    position: relative;
+    overflow: hidden;
     width: 100%;
-    height: 250px;
+    height: 300px;
   }
-   
-  .slide-show > img{
+
+  .slide-show > img {
     position: absolute;
     top: 0;
-    left: 100%; 
+    left: 100%;
     animation: slide 20s linear forwards infinite;
   }
-  
-  .slide-show > img:nth-of-type(1){
+
+  .slide-show > img:nth-of-type(1) {
     animation: slide 20s linear forwards infinite, slide-start 20s linear;
   }
-  
+
   .slide-show > img:nth-of-type(2) {
-    animation-delay: 3s; 
+    animation-delay: 3s;
   }
   .slide-show > img:nth-of-type(3) {
     animation-delay: 6s;
   }
-  .slide-show > img:nth-of-type(4){
+  .slide-show > img:nth-of-type(4) {
     animation-delay: 9s;
   }
-  .slide-show > img:nth-of-type(5){
+  .slide-show > img:nth-of-type(5) {
     animation-delay: 12s;
   }
-  .slide-show > img:nth-of-type(6){
+  .slide-show > img:nth-of-type(6) {
     animation-delay: 15s;
   }
-  
 
-  @keyframes slide{
+  @keyframes slide {
     0% {
       left: 100%;
     }
-    3%, 25%{ 
-      left: 0; 
+    3%,
+    25% {
+      left: 0;
     }
-    28%,100%{
-      left: -100%; 
-    }
-  }
-  
-  @keyframes slide-start{
-    0%,25%{
-      left: 0; 
-    }
-    28%,100%{
-      left: -100%; 
+    28%,
+    100% {
+      left: -100%;
     }
   }
 
-  
+  @keyframes slide-start {
+    0%,
+    25% {
+      left: 0;
+    }
+    28%,
+    100% {
+      left: -100%;
+    }
+  }
+
+  /* FOOTER */
+  footer p {
+    font-size: 10px;
+  }
+}
+
+/* ---------- TABLET VERSION ---------- */
+
+@media (min-width: 600px) {
+  h1 {
+    font-size: 60px;
+  }
+
+  h2 {
+    font-size: 40px;
+  }
+
+  h3 {
+    font-size: 30px;
+  }
+
+  h4 {
+    font-size: 25px;
+  }
+
+  h5 {
+    font-size: 20px;
+  }
+
+  p,
+  li {
+    line-height: 1.5;
+    letter-spacing: 1px;
+    font-size: 15px;
+  }
+
+  /* HEADER */
+  header p {
+    font-size: 17px;
+  }
+
+  details a {
+    font-size: 20px;
+  }
+
+  /* ABOUT */
+  .skill > div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .skill p {
+    width: 100%;
+  }
+
+  #about p > span {
+    width: 65px;
+    height: 65px;
+    font-size: 15px;
+  }
+
+  /* WORK */
+  #work span {
+    font-size: 16px;
+  }
+
+  .slide-show {
+    height: 600px;
+  }
+  /* FOOTER */
+  footer p {
+    font-size: 13px;
+  }
+}
+
+/* ---------- DESKTOP VERSION ---------- */
+
+@media (min-width: 1000px) {
+  h1 {
+    font-size: 95px;
+  }
+
+  h2 {
+    font-size: 40px;
+  }
+
+  details {
+    display: none;
+  }
+
+  /* HEADER */
+  header p {
+    font-size: 25px;
+  }
+
+  header > section {
+    display: flex;
+    align-items: center;
+  }
+
+  section i {
+    font-size: 25px;
+  }
+
+  nav h3 {
+    width: 15%;
+  }
+
+  nav > section {
+    justify-content: space-between;
+  }
+
+  section > ul {
+    display: flex;
+    width: 50%;
+    justify-content: space-around;
+  }
+
+  .icon {
+    width: 8%;
+  }
+
+  ul a:hover,
+  .icon i:hover {
+    color: #b89cc2;
+  }
+
+  /* ABOUT */
+  .skill > div {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    width: 70%;
+  }
+
+  #about img {
+    display:block;
+    width: 280px;
+    height: auto;
+  }
+
+  #about > section {
+    display: flex;
+    flex-direction: row;
+    column-gap: 5%;
+  }
+
+  #about .left {
+    width: 60%;
+  }
+
+  #about li a,
+  #education a {
+    text-decoration: none;
+  }
+
+  #about li a:hover,
+  #education a:hover {
+    text-decoration: underline;
+  }
+
+  /* WORK */
+  #work img {
+    width: 100%;
+  }
+
+  #work aside > section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  #work figure {
+    width: 47%;
+  }
+
+  .slide-container {
+    width: 47%;
+  }
+
+  .slide-show {
+    width: 100%;
+    height: 380px;
+  }
+
+  /* CONTACT */
+  #contact a:hover {
+    text-decoration: underline;
+  }
+
+  /* FOOTER */
+  footer {
+    padding: 1%;
+  }
 }
